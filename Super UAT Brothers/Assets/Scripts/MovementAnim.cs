@@ -27,19 +27,16 @@ public class MovementAnim : MonoBehaviour
                 Flip();
             }
             anim.SetBool("isWalking", true);
-            Debug.Log("Right Walking is happening");
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
             anim.SetBool("isWalking", false);
-            Debug.Log("RIGHT STOP WALK");
         }
 
         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
         {
             anim.SetBool("isRunning", true);
-            Debug.Log("Right running.");
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -49,19 +46,16 @@ public class MovementAnim : MonoBehaviour
                 Flip();
             }
             anim.SetBool("isWalking", true);
-            Debug.Log("Left Walking is happening");
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
             anim.SetBool("isWalking", false);
-            Debug.Log("LEFT STOP WALK");
         }
 
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
         {
             anim.SetBool("isRunning", true);
-            Debug.Log("Left Running is happening");
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
