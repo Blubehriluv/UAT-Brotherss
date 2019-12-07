@@ -62,19 +62,19 @@ AnimatorStateMachine:
     m_Position: {x: 70, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3284641670409055643}
-    m_Position: {x: 300, y: 40, z: 0}
+    m_Position: {x: 330, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3612808618647014065}
-    m_Position: {x: 320, y: 230, z: 0}
+    m_Position: {x: 270, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5181022651108381125}
-    m_Position: {x: 530, y: 130, z: 0}
+    m_Position: {x: 830, y: -90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4412534254399184199}
-    m_Position: {x: 440, y: 390, z: 0}
+    m_Position: {x: 410, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4287639743412363785}
-    m_Position: {x: 560, y: 470, z: 0}
+    m_Position: {x: 720, y: 390, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 2725261517323459518}
@@ -85,9 +85,9 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 350, y: -130, z: 0}
+  m_AnyStatePosition: {x: 530, y: 90, z: 0}
   m_EntryPosition: {x: 80, y: 0, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 810, y: 130, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 3665641654854957716}
 --- !u!1101 &-2812229620936712240
@@ -121,19 +121,19 @@ AnimatorController:
   m_Name: PlayerAnim
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: isJump
+  - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isWalk
+  - m_Name: isWalking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isRun
+  - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -145,7 +145,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isDeath
+  - m_Name: isDead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
