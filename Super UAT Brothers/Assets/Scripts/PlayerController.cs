@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Transform tf;
     public static bool botControl = false;
+    public static bool winner = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("bot control on");
             tf.position = tf.position + Vector3.right * speed;
+        }
+        else if (winner == true)
+        {
+            speed = 0;
+            runSpeed = 0;
         }
         else if (botControl == false)
         {

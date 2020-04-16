@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\FloorManager.cs" />
+    <Compile Include="Assets\Scripts\HappyWinner.cs" />
     <Compile Include="Assets\Scripts\L1Change.cs" />
     <Compile Include="Assets\Scripts\MovementAnim.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\Spawns\SC2.cs" />
     <Compile Include="Assets\Scripts\Spawns\SC3.cs" />
     <Compile Include="Assets\Scripts\Spawns\SpawnChecker.cs" />
+    <Compile Include="Assets\Scripts\Water.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/taymcken/Documents/GitHub/UAT-Brotherss/Super UAT Brothers/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

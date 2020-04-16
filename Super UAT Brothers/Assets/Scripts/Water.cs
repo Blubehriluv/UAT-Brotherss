@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerLife : MonoBehaviour
+public class Water : MonoBehaviour
 {
-    public static int playerLives;
-    private SpawnChecker sc;
-
     // Start is called before the first frame update
     void Start()
     {
-        sc = GameObject.FindGameObjectWithTag("CheckManage").GetComponent<SpawnChecker>();
-        transform.position = sc.lastCheckPointPos;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
