@@ -21,6 +21,8 @@ public class L1Change : MonoBehaviour
     {
         if (collision)
         {
+            PlayerController.botControl = false;
+            MovementAnim.animControl = false;
             SceneManager.LoadScene("LevelOne");
         }
     }
