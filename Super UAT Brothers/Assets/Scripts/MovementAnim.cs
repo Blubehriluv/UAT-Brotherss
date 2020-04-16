@@ -6,6 +6,7 @@ public class MovementAnim : MonoBehaviour
 {
     bool facingRight = true;
     private Animator anim;
+    public static bool animControl;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class MovementAnim : MonoBehaviour
 
     void SetAnimationState()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (animControl == true)
         {
             if (facingRight == false)
             {
@@ -28,53 +29,62 @@ public class MovementAnim : MonoBehaviour
             }
             anim.SetBool("isWalking", true);
         }
-
-        if (Input.GetKeyUp(KeyCode.D))
+        else if (animControl == false)
         {
-            anim.SetBool("isWalking", false);
-        }
-
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
-        {
-            anim.SetBool("isRunning", true);
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            if (facingRight == true)
+            if (Input.GetKey(KeyCode.D))
             {
-                Flip();
+                if (facingRight == false)
+                {
+                    Flip();
+                }
+                anim.SetBool("isWalking", true);
             }
-            anim.SetBool("isWalking", true);
-        }
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            anim.SetBool("isWalking", false);
-        }
+            if (Input.GetKeyUp(KeyCode.D))
+            {
+                anim.SetBool("isWalking", false);
+            }
 
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
-        {
-            anim.SetBool("isRunning", true);
-        }
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("isRunning", true);
+            }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            anim.SetBool("isRunning", false);
-        }
+            if (Input.GetKey(KeyCode.A))
+            {
+                if (facingRight == true)
+                {
+                    Flip();
+                }
+                anim.SetBool("isWalking", true);
+            }
+
+            if (Input.GetKeyUp(KeyCode.A))
+            {
+                anim.SetBool("isWalking", false);
+            }
+
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("isRunning", true);
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                anim.SetBool("isRunning", false);
+            }
 
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetBool("isJumping", true);
-        }
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.SetBool("isJumping", true);
+            }
 
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Space))
-        {
-            anim.SetBool("isJumping", false);
-        }
-
-        
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Space))
+            {
+                anim.SetBool("isJumping", false);
+            }
+        }      
     }
 
     void Flip()
