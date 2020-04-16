@@ -6,12 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public float runSpeed;
-    public float jumpX;
-    public float jumpY;
-    private float dirca;
+    public float jumpSpeed;
     private Rigidbody2D rb;
     private Transform tf;
-    //private float angle = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +20,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dirca = Input.GetAxis("Horizontal");
-
-        rb.velocity = new Vector2(dirca * jumpX, rb.velocity.y);
+        //rb.velocity = new Vector2(dirca * jumpX, rb.velocity.y);
         if (Input.GetKey(KeyCode.LeftShift))
         {
             if (Input.GetKey(KeyCode.A))
@@ -38,9 +33,13 @@ public class PlayerController : MonoBehaviour
                 tf.position = tf.position + Vector3.right * runSpeed;
             }
 
-            if (Input.GetKey(KeyCode.W) && rb.velocity.y == 0)
+            if (Input.GetKeyDown(KeyCode.W))
             {
-                rb.AddForce(Vector2.up * jumpY, ForceMode2D.Impulse);
+                if (FloorManager.jumps != 0)
+                {
+                    rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Force);
+                    FloorManager.jumps -= 1;
+                }
             }
         }
 
@@ -56,9 +55,13 @@ public class PlayerController : MonoBehaviour
                 tf.position = tf.position + Vector3.right * speed;
             }
 
-            if (Input.GetKey(KeyCode.W) && rb.velocity.y == 0)
+            if (Input.GetKeyDown(KeyCode.W))
             {
-                rb.AddForce(Vector2.up * jumpY, ForceMode2D.Impulse);
+                if (FloorManager.jumps != 0)
+                {
+                    rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Force);
+                    FloorManager.jumps -= 1;
+                }
             }
         }
     }
