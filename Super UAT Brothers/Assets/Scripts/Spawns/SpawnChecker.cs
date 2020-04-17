@@ -6,6 +6,7 @@ public class SpawnChecker : MonoBehaviour
 {
     private static SpawnChecker instance;
     public Vector2 lastCheckPointPos;
+    public AudioSource music;
 
     private void Awake()
     {
@@ -24,12 +25,17 @@ public class SpawnChecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        music = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void StopMusic()
+    {
+        music.Stop(); 
     }
 }

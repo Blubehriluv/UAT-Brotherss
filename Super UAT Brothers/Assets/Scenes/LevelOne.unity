@@ -6838,6 +6838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastCheckPointPos: {x: -12.15, y: -4}
+  music: {fileID: 263550678}
 --- !u!4 &263550677
 Transform:
   m_ObjectHideFlags: 0
@@ -17985,8 +17986,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 263550678}
-        m_MethodName: Pause
+      - m_Target: {fileID: 263550676}
+        m_MethodName: StopMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
