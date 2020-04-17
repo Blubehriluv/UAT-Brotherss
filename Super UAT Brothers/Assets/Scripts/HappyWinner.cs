@@ -5,15 +5,19 @@ using UnityEngine;
 public class HappyWinner : MonoBehaviour
 {
     private GameObject player;
+    public Canvas myCanvas;
+    private PlayerController PC;
+
     // Start is called before the first frame update
     void Start()
     {
+        myCanvas.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +26,14 @@ public class HappyWinner : MonoBehaviour
             PlayerController.botControl = false;
             MovementAnim.animControl = false;
             PlayerController.winner = true;
+            myCanvas.enabled = true;    
         }
     }
+
+    public void ResumeControl()
+    {
+        PlayerController.winner = false;
+    }
+
+
 }

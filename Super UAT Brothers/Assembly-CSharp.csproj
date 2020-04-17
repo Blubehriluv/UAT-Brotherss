@@ -66,10 +66,12 @@
     <Compile Include="Assets\Scripts\FloorManager.cs" />
     <Compile Include="Assets\Scripts\HappyWinner.cs" />
     <Compile Include="Assets\Scripts\L1Change.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MovementAnim.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayGame.cs" />
     <Compile Include="Assets\Scripts\Progress.cs" />
+    <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\Spawns\Checkpoints.cs" />
     <Compile Include="Assets\Scripts\Spawns\PlayerLife.cs" />
     <Compile Include="Assets\Scripts\Spawns\SC2.cs" />

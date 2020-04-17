@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Progress : MonoBehaviour
 {
-    private GameObject playerMovement;
+    public static bool began;
+    public AudioSource beginMusic;
+    public AudioSource winnerMusic;
     // Start is called before the first frame update
     void Start()
     {
-        playerMovement = GameObject.Find("Owlet_Monster");
+        began = false;
+        Debug.Log("wowee");
+
     }
 
     // Update is called once per frame
@@ -22,9 +26,26 @@ public class Progress : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Player"))
         {
             Debug.Log("Touching sign.");
-            
+
             PlayerController.botControl = true;
             MovementAnim.animControl = true;
+            PlaySound();
         }
     }
+
+    private void PlaySound()
+    {
+        if (PlayerLife.soundValue == false)
+        {
+            winnerMusic.Play();
+            
+        }       
+
+        if (PlayerLife.soundValue == true)
+        {
+            beginMusic.Play();
+            PlayerLife.soundValue = false;
+        }
+    }
+
 }

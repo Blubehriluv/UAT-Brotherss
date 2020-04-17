@@ -7,6 +7,7 @@ public class PlayerLife : MonoBehaviour
 {
     public static int playerLives;
     private SpawnChecker sc;
+    public static bool soundValue = true;
 
     // Start is called before the first frame update
     void Start()

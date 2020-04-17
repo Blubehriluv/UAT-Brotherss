@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Transform tf;
     public static bool botControl = false;
     public static bool winner = false;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,9 @@ public class PlayerController : MonoBehaviour
         }
         else if (botControl == false)
         {
+            speed = 0.08f;
+            runSpeed = 0.16f;
+            
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 if (Input.GetKey(KeyCode.A))
@@ -46,12 +50,13 @@ public class PlayerController : MonoBehaviour
                     tf.position = tf.position + Vector3.right * runSpeed;
                 }
 
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
                 {
                     if (FloorManager.jumps != 0)
                     {
                         rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Force);
                         FloorManager.jumps -= 1;
+                        audio.Play();
                     }
                 }
             }
@@ -68,12 +73,13 @@ public class PlayerController : MonoBehaviour
                     tf.position = tf.position + Vector3.right * speed;
                 }
 
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
                 {
                     if (FloorManager.jumps != 0)
                     {
                         rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Force);
                         FloorManager.jumps -= 1;
+                        audio.Play();
                     }
                 }
             }

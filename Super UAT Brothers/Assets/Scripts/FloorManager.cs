@@ -6,6 +6,8 @@ public class FloorManager : MonoBehaviour
 {
     public static bool isGrounded;
     public static int jumps;
+    public AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,11 @@ public class FloorManager : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("Feet"))
         {
+            audio.Play();
             Debug.Log("Player is grounded.");
             jumps = 2;
             isGrounded = true;
+            
         }
     }
 
