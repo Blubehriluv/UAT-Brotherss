@@ -26,6 +26,7 @@ public class SpawnChecker : MonoBehaviour
     void Start()
     {
         music = GetComponent<AudioSource>();
+        PlayMoosic();
     }
 
     // Update is called once per frame
@@ -34,8 +35,13 @@ public class SpawnChecker : MonoBehaviour
         
     }
 
+    public void PlayMoosic()
+    {
+        music.Play();
+    }
+
     public void StopMusic()
     {
-        music.Stop(); 
+        music.Stop();
     }
 }
