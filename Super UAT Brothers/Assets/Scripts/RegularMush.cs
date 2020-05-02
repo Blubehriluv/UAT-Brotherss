@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class RegularMush : MonoBehaviour
 {
-    private int holder;
     public CollectibleKeep yes;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -28,27 +27,6 @@ public class RegularMush : MonoBehaviour
             yes.TriggerShroom();
             gameObject.SetActive(false);
             
-        }
-    }
-
-    private void CheckStatus()
-    {
-        holder = CollectibleKeep.regShroomCount;
-        if (holder == 3)
-        {
-            SpawnChecker.s3b = true;
-            SpawnChecker.s2b = true;
-            SpawnChecker.s1b = true;
-        }
-        if (holder == 2)
-        {
-            SpawnChecker.s2b = true;
-            SpawnChecker.s1b = true;
-
-        }
-        if (holder == 1)
-        {
-            SpawnChecker.s1b = true;
         }
     }
 }

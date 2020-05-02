@@ -15,6 +15,11 @@ public class SpawnChecker : MonoBehaviour
     public static bool s6b;
     public static bool s7b;
 
+    public static bool placement1;
+    public static bool placement2;
+
+    public static int holder;
+
     private void Awake()
     {
         if (instance == null)
@@ -33,14 +38,16 @@ public class SpawnChecker : MonoBehaviour
     void Start()
     {
         FreshSetCollect();
+        holder = 0;
         music = GetComponent<AudioSource>();
         PlayMoosic();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        holder = CollectibleKeep.regShroomCount;
     }
 
     void FreshSetCollect()
@@ -52,6 +59,9 @@ public class SpawnChecker : MonoBehaviour
         s5b = false;
         s6b = false;
         s7b = false;
+
+        placement1 = false;
+        placement2 = false;
     }
 
     public void PlayMoosic()
