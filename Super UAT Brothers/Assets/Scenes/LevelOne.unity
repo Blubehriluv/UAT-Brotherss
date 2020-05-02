@@ -270,10 +270,10 @@ GameObject:
   - component: {fileID: 33703426}
   - component: {fileID: 33703430}
   - component: {fileID: 33703429}
-  - component: {fileID: 33703428}
   - component: {fileID: 33703427}
+  - component: {fileID: 33703428}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 33703425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d19b7be66ba8984fae93b8df12b4bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -6495,10 +6495,10 @@ GameObject:
   - component: {fileID: 121213676}
   - component: {fileID: 121213680}
   - component: {fileID: 121213679}
-  - component: {fileID: 121213678}
   - component: {fileID: 121213677}
+  - component: {fileID: 121213678}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6548,7 +6548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 121213675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d1697ed312fa63429bb5d6d9bee9346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -6679,6 +6679,13 @@ MonoBehaviour:
   mush5: {fileID: 1019212238}
   mush6: {fileID: 776875958}
   mush7: {fileID: 526531595}
+  col1: {fileID: 1704825515}
+  col2: {fileID: 603699944}
+  col3: {fileID: 121213675}
+  col4: {fileID: 33703425}
+  col5: {fileID: 796947451}
+  col6: {fileID: 762439928}
+  col7: {fileID: 562448500}
   Rmush1: {fileID: 0}
   Rmush2: {fileID: 0}
   Rmush3: {fileID: 0}
@@ -7443,20 +7450,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &241257664
-Transform:
+--- !u!224 &241257664
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241257663}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15301514, y: -0.0977478, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 1075139003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.15301514, y: -0.0977478}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &241257665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8169,20 +8181,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &526531596
-Transform:
+--- !u!224 &526531596
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526531595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 1921207927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.4, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &526531597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8304,10 +8321,10 @@ GameObject:
   - component: {fileID: 562448501}
   - component: {fileID: 562448505}
   - component: {fileID: 562448504}
-  - component: {fileID: 562448503}
   - component: {fileID: 562448502}
+  - component: {fileID: 562448503}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8357,7 +8374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 562448500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f1f64993f103ec4280bedf372976574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -8897,10 +8914,10 @@ GameObject:
   - component: {fileID: 603699945}
   - component: {fileID: 603699949}
   - component: {fileID: 603699948}
-  - component: {fileID: 603699947}
   - component: {fileID: 603699946}
+  - component: {fileID: 603699947}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8950,7 +8967,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 603699944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bd2c76845ab6d2489ba02c1f7c02fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -16536,10 +16553,10 @@ GameObject:
   - component: {fileID: 762439929}
   - component: {fileID: 762439933}
   - component: {fileID: 762439932}
-  - component: {fileID: 762439931}
   - component: {fileID: 762439930}
+  - component: {fileID: 762439931}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16589,7 +16606,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 762439928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 483dc2fb509df984d8ad8f2163954dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -16686,20 +16703,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &776875959
-Transform:
+--- !u!224 &776875959
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776875958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 1635624293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.2, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &776875960
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16772,10 +16794,10 @@ GameObject:
   - component: {fileID: 796947452}
   - component: {fileID: 796947456}
   - component: {fileID: 796947455}
-  - component: {fileID: 796947454}
   - component: {fileID: 796947453}
+  - component: {fileID: 796947454}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16825,7 +16847,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 796947451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8ac238940700544a58a054060b004f, type: 3}
+  m_Script: {fileID: 11500000, guid: 761f110c23ebada45bbff690352b7542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   yes: {fileID: 128826861}
@@ -17052,20 +17074,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &886367066
-Transform:
+--- !u!224 &886367066
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886367065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 1913297206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.4, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &886367067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17368,20 +17395,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &983545227
-Transform:
+--- !u!224 &983545227
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983545225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 15787309}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.3, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983545228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17412,20 +17444,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1019212239
-Transform:
+--- !u!224 &1019212239
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019212238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 1162553437}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1019212240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19764,20 +19801,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1571836811
-Transform:
+--- !u!224 &1571836811
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571836810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.09780884, z: -4686.705}
+  m_LocalPosition: {x: 0, y: 0, z: -4686.705}
   m_LocalScale: {x: 99.58164, y: 96.44265, z: 52.0745}
   m_Children: []
   m_Father: {fileID: 672737563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.1, y: -0.09780884}
+  m_SizeDelta: {x: 0.5, y: 0.41}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1571836812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20402,7 +20444,7 @@ GameObject:
   - component: {fileID: 1704825519}
   - component: {fileID: 1704825520}
   m_Layer: 0
-  m_Name: Mushroom_1
+  m_Name: mush1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

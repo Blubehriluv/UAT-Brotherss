@@ -74,7 +74,13 @@
     <Compile Include="Assets\Scripts\PlayGame.cs" />
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
-    <Compile Include="Assets\Scripts\RegularMush.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush2.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush3.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush4.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush5.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush6.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegMush7.cs" />
+    <Compile Include="Assets\Scripts\Reg Shroom\RegularMush.cs" />
     <Compile Include="Assets\Scripts\Spawns\Checkpoints.cs" />
     <Compile Include="Assets\Scripts\Spawns\PlayerLife.cs" />
     <Compile Include="Assets\Scripts\Spawns\SC2.cs" />

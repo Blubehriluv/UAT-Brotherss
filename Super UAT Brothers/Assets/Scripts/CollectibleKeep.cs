@@ -13,6 +13,14 @@ public class CollectibleKeep : MonoBehaviour
     public GameObject mush6;
     public GameObject mush7;
 
+    public GameObject col1;
+    public GameObject col2;
+    public GameObject col3;
+    public GameObject col4;
+    public GameObject col5;
+    public GameObject col6;
+    public GameObject col7;
+
     public GameObject Rmush1;
     public GameObject Rmush2;
     public GameObject Rmush3;
@@ -26,8 +34,8 @@ public class CollectibleKeep : MonoBehaviour
     void Start()
     {
         regShroomCount = SpawnChecker.holder;
-        
         TriggerShroom();
+        ShroomCheck();
     }
 
     // Update is called once per frame
@@ -38,56 +46,58 @@ public class CollectibleKeep : MonoBehaviour
 
     public void ShroomCheck()
     {
-        if (regShroomCount != 0)
+        if (SpawnChecker.s1b == true)
         {
-            if (regShroomCount == 1)
-            {
-                SpawnChecker.s1b = true;
-            }
-            if (regShroomCount == 2)
-            {
-                SpawnChecker.s2b = true;
-            }
+            col1.GetComponent<Renderer>().enabled = false;
+        }
+        if (SpawnChecker.s2b == true)
+        {
+            col2.GetComponent<Renderer>().enabled = false;
+        }
+        if (SpawnChecker.s3b == true)
+        {
+            col3.GetComponent<Renderer>().enabled = false;
         }
     }
 
     public void TriggerShroom()
     {
         Debug.Log("Checking and changing shrooms)");
-        if (regShroomCount == 7)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got seven");
-        }
-        if (regShroomCount == 6)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got six");
-        }
-        if (regShroomCount == 5)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got five");
-        }
-        if (regShroomCount == 4)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got four");
-        }
-        if (regShroomCount == 3)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got three");
-        }
-        if (regShroomCount == 2)
-        {
-            mush1.GetComponent<Renderer>().enabled = true;
-            Debug.Log("Got two");
-        }
-        if (regShroomCount == 1)
+
+        if (regShroomCount >= 1)
         {
             mush1.GetComponent<Renderer>().enabled = true;
             Debug.Log("Got one");
+        }
+        if (regShroomCount >= 2)
+        {
+            mush2.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got two");
+        }
+        if (regShroomCount >= 3)
+        {
+            mush3.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got three");
+        }
+        if (regShroomCount >= 4)
+        {
+            mush4.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got four");
+        }
+        if (regShroomCount >= 5)
+        {
+            mush5.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got five");
+        }
+        if (regShroomCount >= 6)
+        {
+            mush6.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got six");
+        }
+        if (regShroomCount == 7)
+        {
+            mush7.GetComponent<Renderer>().enabled = true;
+            Debug.Log("Got seven");
         }
     }
 }
